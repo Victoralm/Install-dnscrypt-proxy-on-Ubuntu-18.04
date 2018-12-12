@@ -1,6 +1,6 @@
 # Install dnscrypt-proxy on Ubuntu 18.04
 
-Not exact the best way to do it, but it works...
+Not exactly the best way to do it, but it works...
 
 [Oficial documentation to install on Linux](https://github.com/jedisct1/dnscrypt-proxy/wiki/Installation-linux)
 
