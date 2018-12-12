@@ -81,7 +81,7 @@ Not exactly the best way to do it, but it works...
     ```
 12. For now, will be necessary to rewrite the *`/etc/resolv.conf`* manualy every time that the conection restarts, including on boot.
 
-13. On *`Ubuntu System Settings`* go to your network configuration (the engine butom). In the new window that opens, go to the *`IPV4`* tab. Uncheck *`Automatic DNS`* and insert the address *`127.0.0.1`*.
+13. On *`Ubuntu System Settings`* go to your network configuration (the engine button). In the new window that opens, go to the *`IPV4`* tab. Uncheck *`Automatic DNS`* and insert the address *`127.0.0.1`*.
 
 14. For now, you'll need to start the *`dnscrypt-proxy`* manualy. On a terminal:
 
