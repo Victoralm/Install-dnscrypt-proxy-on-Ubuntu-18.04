@@ -33,7 +33,7 @@ Not exact the best way to do it, but it works...
     sudo netstat -tpln|grep ":53 "		# for TCP
     ```
 
-5. Disable the *`net-tools`*:
+5. Disable the *`systemd-resolved`*:
     ```bash
     sudo systemctl stop systemd-resolved
     sudo systemctl disable systemd-resolved
