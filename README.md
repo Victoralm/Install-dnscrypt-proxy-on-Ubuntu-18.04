@@ -107,16 +107,22 @@ Not exactly the best way to do it, but it works...
     ...
     ```
 
-You'll need to start *`dnscrypt-proxy`* and let it running on a terminal and edit the file *`/etc/resolv.conf`* (steps 12 and 15) on each boot...
-<br><br>
-
-### I couldn't get the last part to work...
-
-- On a terminal, start the *`dnscrypt-proxy`*:
+18. On a terminal, install and start the *`dnscrypt-proxy`* service:
     ```bash
     sudo dnscrypt-proxy -service install -config /etc/dnscrypt-proxy/dnscrypt-proxy.toml
     ```
-    or
+    and
     ```bash
     sudo dnscrypt-proxy -service start -config /etc/dnscrypt-proxy/dnscrypt-proxy.toml
     ```
+
+19. Restart your machine and search for the *`dnscrypt-proxy`* process after boot:
+    ```bash
+    ps -aux | grep dnscrypt-proxy
+    ```
+
+20. Edit again the *`/etc/resolv.conf`* like shown on step 11 and [test](https://dnsleaktest.com) your DNS resolving.
+
+<br><br>
+### Important
+You'll need to edit the file *`/etc/resolv.conf`* (step 11) on each boot...
