@@ -121,7 +121,15 @@ Not exactly the best way to do it, but it works...
     ps -aux | grep dnscrypt-proxy
     ```
 
-20. Edit again the *`/etc/resolv.conf`* like shown on step 11 and [test](https://dnsleaktest.com) your DNS resolving.
+20. I've made an alias on *`~/.profile`* to rewrite the *`/etc/resolv.conf`*:
+    ```bash
+    # ~/.profile
+    alias almsdnscpcon="sudo sed -i 's/127.0.0.53/127.0.0.1\noptions edns0 single-request-reopen/g' /etc/resolv.conf"
+    ```
+    This way, I can call the alias from the terminal, to make the alteration on the *`/etc/resolv.conf`*, just typing:
+    ```bash
+    almsdnscpcon
+    ```
 
 <br><br>
 ### Important
